@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webcolor
+  name: simple-web
 spec:
   selector:
     matchLabels:
-      app: webcolor
+      app: simple-web
   template:
     metadata:
       labels:
-        app: webcolor
+        app: simple-web
     spec:
       containers:
-      - name: webcolor
+      - name: simple-web
         image: yeasy/simple-web
         ports:
         - containerPort: 80
@@ -20,10 +20,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webcolor
+  name: simple-web
 spec:
   selector:
-    app: webcolor
+    app: simple-web
   type: LoadBalancer
   ports:
   - port: 8000  
