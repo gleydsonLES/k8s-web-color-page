@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: webcolor
-        image: fabricioveronez/web-page:green
+        image: mtinside/blue-green
         ports:
         - containerPort: 80
 ---
