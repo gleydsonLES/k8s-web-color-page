@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: webcolor
-        image: mtinside/blue-green:blue
+        image: yeasy/simple-web
         ports:
         - containerPort: 80
 ---
